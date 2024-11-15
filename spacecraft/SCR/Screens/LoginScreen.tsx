@@ -1,14 +1,8 @@
 import React from 'react';
-import {
-  Text,
-  SafeAreaView,
-  StyleSheet,
-  TextInput,
-  TouchableHighlight,
-  View,
-} from 'react-native';
+import { Text, SafeAreaView,StyleSheet,TextInput,TouchableHighlight,View } from 'react-native';
+import { Checkbox } from 'react-native-paper'; 
 
-export default function App() {
+export default function LoginScreen() {
   const [email, setEmail] = React.useState('Email');
   const [password, setpassword] = React.useState('Password');
 
