@@ -5,6 +5,7 @@ import { Checkbox } from 'react-native-paper';
 export default function LoginScreen() {
   const [email, setEmail] = React.useState('Email');
   const [password, setpassword] = React.useState('Password');
+  const [ischecked, setcheck] = React.useState(true);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -23,6 +24,13 @@ export default function LoginScreen() {
           value={password}
           onChangeText={setpassword}
           clearTextOnFocus={true}
+          secureTextEntry= {ischecked}
+        />
+         <Checkbox.Item 
+        status={ ischecked ? 'checked' : 'unchecked'}
+        label="Show Password" 
+        color='#00ff00'
+        onPress={()=> {setcheck(!ischecked)}}
         />
         <TouchableHighlight
           style={styles.Bcontainer}
