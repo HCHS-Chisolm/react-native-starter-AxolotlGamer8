@@ -27,7 +27,7 @@ export default function LoginScreen() {
           secureTextEntry= {ischecked}
         />
          <Checkbox.Item 
-        status={ ischecked ? 'checked' : 'unchecked'}
+        status={ ischecked ? 'unchecked' : 'checked'}
         label="Show Password" 
         color='#00ff00'
         onPress={()=> {setcheck(!ischecked)}}
