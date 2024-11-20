@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, SafeAreaView,StyleSheet,TextInput,TouchableHighlight,View } from 'react-native';
 import { Checkbox } from 'react-native-paper'; 
-import { Header } from 'react-native/Libraries/NewAppScreen';
+
 
 export default function LoginScreen() {
   const [email, setEmail] = React.useState('Email');
