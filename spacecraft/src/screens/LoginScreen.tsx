@@ -10,7 +10,7 @@ export default function LoginScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.top}>
-        <Text style={styles.Title}>SpaceCraft</Text>
+        <Header title={'SpaceCraft'}/>
       </View>
       <View style={styles.Bottom}>
         <TextInput
