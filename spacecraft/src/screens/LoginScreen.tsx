@@ -12,7 +12,7 @@ export default function LoginScreen() {
     <SafeAreaView style={styles.container}>
       <View style={styles.top}>
         <Text>
-          Spacecraft
+          <Header title={'SpaceCraft'}/>
         </Text>
       </View>
       <View style={styles.Bottom}>
