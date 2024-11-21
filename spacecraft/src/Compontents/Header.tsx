@@ -16,4 +16,4 @@ const Header: React.
         },
     })
 
-    
+    export default Header;

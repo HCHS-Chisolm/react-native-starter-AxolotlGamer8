@@ -1,6 +1,7 @@
 import React from 'react';
 import { Text, SafeAreaView,StyleSheet,TextInput,TouchableHighlight,View } from 'react-native';
 import { Checkbox } from 'react-native-paper'; 
+import Header from '../Compontents/Header'
 
 
 export default function LoginScreen() {
@@ -11,7 +12,7 @@ export default function LoginScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.top}>
-        <Text>
+        <Text style={styles.Title}>
           <Header title={'SpaceCraft'}/>
         </Text>
       </View>
