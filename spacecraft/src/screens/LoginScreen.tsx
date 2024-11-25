@@ -1,8 +1,10 @@
 import React from 'react';
-import { Text, SafeAreaView,StyleSheet,TextInput,TouchableHighlight,View } from 'react-native';
+import { Text, SafeAreaView,StyleSheet,TextInput,TouchableHighlight,View, Dimensions } from 'react-native';
 import { Checkbox } from 'react-native-paper'; 
 import Header from '../Compontents/Header'
 
+let deviceHeight = Dimensions.get('window').height;
+let deviceWidth = Dimensions.get('window').width;
 
 export default function LoginScreen() {
   const [email, setEmail] = React.useState('Email');
@@ -53,14 +55,16 @@ export default function LoginScreen() {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1,
+    height: deviceHeight,
+    width: deviceWidth,
   },
   top: {
     borderColor: 'black',
     borderWidth: 4,
     fontSize: 18,
     backgroundColor: '#6a5ae8',
-    flex: 2,
+    height: deviceHeight*2/7,
+    width: deviceWidth,
     alignItems: 'center',
     justifyContent: 'center',
   },
@@ -76,8 +80,8 @@ const styles = StyleSheet.create({
     color: '#d8d8d8',
   },
   button: {
-    width: 200,
-    height: 50,
+    width: deviceWidth*1/5,
+    height: deviceHeight*1/10,
     backgroundColor: '#6a5ae8',
     borderWidth: 2,
     borderColor: 'black',
@@ -89,7 +93,8 @@ const styles = StyleSheet.create({
     fontSize: 20,
   },
   Bottom: {
-    flex: 5,
+    height: deviceHeight*5/7,
+    width: deviceWidth,
     alignItems: 'center',
     borderLeftWidth: 4,
     borderRightWidth: 4,
@@ -97,15 +102,15 @@ const styles = StyleSheet.create({
   },
   textinput1: {
     borderWidth: 1,
-    width: 300,
-    height: 50,
+    width: deviceWidth*1/3,
+    height: deviceHeight*1/10,
     marginTop: 65,
     marginBottom: 25,
   },
   textinput2: {
     borderWidth: 1,
-    width: 300,
-    height: 50,
+    width: deviceWidth*1/3,
+    height: deviceHeight*1/10,
     marginBottom: 30,
   },
 });
