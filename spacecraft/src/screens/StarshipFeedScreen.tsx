@@ -1,4 +1,4 @@
-import { StatusBar, StyleSheet, Text, View } from "react-native";
+import { StatusBar, StyleSheet, Text, View, FlatList } from "react-native";
 import { default as data } from "../../api/data.json";
 
 export const StarshipFeedScreen = () => {
@@ -7,6 +7,11 @@ export const StarshipFeedScreen = () => {
       <View style={styles.headerContainer}>
         <Text>{JSON.stringify(data)}</Text>
       </View>
+      <FlatList
+        data={data.results}
+        keyExtractor={(item) => item.url}
+        renderItem={({ item }) => <StarshipItem starship={item} />}
+        />
     </View>
   );
 };
