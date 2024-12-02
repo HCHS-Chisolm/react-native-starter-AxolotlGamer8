@@ -1,5 +1,6 @@
 import { StatusBar, StyleSheet, Text, View, FlatList } from "react-native";
 import { default as data } from "../../api/data.json";
+import StarshipItem from "../compontents/StarshipItem";
 
 export const StarshipFeedScreen = () => {
   return (

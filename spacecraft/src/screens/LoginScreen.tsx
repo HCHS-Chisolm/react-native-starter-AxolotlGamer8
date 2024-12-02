@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, SafeAreaView,StyleSheet,TextInput,TouchableHighlight,View, Dimensions } from 'react-native';
 import { Checkbox } from 'react-native-paper'; 
-import Header from '../Compontents/Header'
+import Header from '../compontents/Header'
 
 let deviceHeight = Dimensions.get('window').height;
 let deviceWidth = Dimensions.get('window').width;
