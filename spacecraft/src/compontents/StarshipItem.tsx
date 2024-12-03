@@ -1,5 +1,5 @@
 import React from "react";
-import { View, Text, StyleSheet } from "react-native";
+import { View, Text, StyleSheet, Image } from "react-native";
 
 interface Starship {
     name: string;
@@ -21,6 +21,7 @@ const StarshipItem: React.FC<{ starship: Starship }> = ({ starship }) => {
     return (
         <View style={styles.itemcontainer}>
             <Text style={styles.title}>{starship.name}</Text>
+            <Image source={{uri: `https://picsum.photos/seed/${starship.name}/400/200`}} />
             <Text>{`Model: ${starship.model}`} </Text>
             <Text>{`Manufacturer: ${starship.manufacturer}`} </Text>
             <Text>{`Cost in Credits: ${starship.cost_in_credits}`}</Text>
