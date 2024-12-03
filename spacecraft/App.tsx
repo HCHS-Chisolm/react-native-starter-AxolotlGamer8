@@ -9,7 +9,6 @@ function App() {
   return (
     <PaperProvider>
       <StarshipFeedScreen />
-      <TermsScreen />
     </PaperProvider>
     
   );
