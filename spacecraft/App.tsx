@@ -8,7 +8,6 @@ import LoginScreen from './src/screens/LoginScreen';
 function App() {
   return (
     <PaperProvider>
-      <LoginScreen />
       <StarshipFeedScreen />
       <TermsScreen />
     </PaperProvider>
