@@ -1,5 +1,8 @@
 import React from "react";
-import { View, Text, StyleSheet, Image } from "react-native";
+import { View, Text, StyleSheet, Image, Dimensions} from "react-native";
+
+let deviceHeight = Dimensions.get('window').height;
+let deviceWidth = Dimensions.get('window').width;
 
 interface Starship {
     name: string;
@@ -47,8 +50,8 @@ const styles = StyleSheet.create({
 
     },
     picture: {
-        height: 150,
-        width: 200,
+        height: deviceHeight*3/10,
+        width: deviceWidth*3/10,
     },
   });
 
