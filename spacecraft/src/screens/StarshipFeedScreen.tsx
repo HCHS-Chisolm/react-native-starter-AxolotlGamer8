@@ -5,9 +5,6 @@ import StarshipItem from "../compontents/StarshipItem";
 export const StarshipFeedScreen = () => {
   return (
     <View style={styles.container}>
-      <View style={styles.headerContainer}>
-        <Text>{JSON.stringify(data)}</Text>
-      </View>
       <FlatList
         data={data.results}
         keyExtractor={(item) => item.url}
