@@ -21,7 +21,7 @@ const StarshipItem: React.FC<{ starship: Starship }> = ({ starship }) => {
     return (
         <View style={styles.itemcontainer}>
             <Text style={styles.title}>{starship.name}</Text>
-            <Image source={{uri: `https://picsum.photos/seed/${starship.model}/400/200`}} />
+            <Image style={styles.picture} source={{uri: `https://picsum.photos/seed/${starship.model}/400/200`}} />
             <Text>{`Model: ${starship.model}`} </Text>
             <Text>{`Manufacturer: ${starship.manufacturer}`} </Text>
             <Text>{`Cost in Credits: ${starship.cost_in_credits}`}</Text>
@@ -45,6 +45,10 @@ const styles = StyleSheet.create({
     },
     title: {
 
+    },
+    picture: {
+        height: 150,
+        width: 200,
     },
   });
 
