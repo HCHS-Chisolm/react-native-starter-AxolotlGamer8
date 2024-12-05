@@ -71,4 +71,33 @@ const $1 = () => {
 export default $1
 
 
-## 
+## sntest
+
+import 'react-native'
+import React from 'react'
+import renderer from 'react-test-renderer'
+
+import $1 from '../$1'
+
+describe('<$1 />', () => {
+  const defaultProps = {}
+
+  const wrapper = renderer.create(<$1 {...defaultProps} />)
+
+  test('render', () => {
+    expect(wrapper).toMatchSnapshot()
+  })
+})
+
+
+## v⇥ var statement
+var ${0}
+
+## v=⇥ var assignment
+var ${1:name} = ${2:value}
+
+## l⇥ let statement
+let ${0}
+
+## l=⇥ let assignment
+let ${1:name} = ${2:value}
