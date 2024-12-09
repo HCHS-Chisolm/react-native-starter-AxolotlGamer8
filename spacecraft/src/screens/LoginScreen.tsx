@@ -59,10 +59,10 @@ const styles = StyleSheet.create({
     width: deviceWidth,
   },
   top: {
-    borderColor: 'black',
+    borderColor: "black",
     borderWidth: 4,
     fontSize: 18,
-    backgroundColor: '#6a5ae8',
+    backgroundColor: "#6a5ae8",
     height: deviceHeight*2/7,
     width: deviceWidth,
     alignItems: 'center',
