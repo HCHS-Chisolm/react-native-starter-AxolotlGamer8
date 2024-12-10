@@ -36,6 +36,7 @@ module.exports = {
           ["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"],
         ]
   },
+],
   rules: {
     "prettier/prettier": [ "warn",
 
@@ -44,4 +45,5 @@ module.exports = {
     }
   ]
   },
+}
 };
